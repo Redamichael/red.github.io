@@ -6,12 +6,12 @@ function compute()
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
 
-    if(principal == "" || principal <= 0)
+    if(principal == "" || principal <= 0) //check if the entered amount is 0 or negative input
 
     {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
-        return;
+        return; // return error message for 0 and negative input
     }
 
     var dateNow = new Date();
@@ -23,7 +23,7 @@ function compute()
 function updateRate()
 {
 var rateval = document.getElementById("rate").value;
-document.getElementById("rate_val").innerText=rateval+"%";
+document.getElementById("rate_val").innerText=rateval+"%"; //updates the slider values
 
 }
         

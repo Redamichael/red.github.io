@@ -9,13 +9,13 @@ h1{color:grey;font-family:verdana}
     margin-left: auto;
     margin-right: auto;
 }
-.contents
+.contents /* stylize the contents div*/
 {
     margin-left: 80px;
 }
 
 
-.highlight
+.highlight /* highlight the results with yellow color*/
 {
     background-color: #ffff00;
 }
